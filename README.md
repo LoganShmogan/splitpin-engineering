@@ -62,3 +62,9 @@ Paste the printed line into `js/gallery-data.js`, set the category
 The form opens the visitor's email app with their details pre-filled (no backend needed).
 To receive submissions directly instead, point the form at a service like Formspree or
 Web3Forms and replace the submit handler in `js/main.js`.
+
+## Cache busting
+
+Each page loads CSS/JS with a version tag (e.g. `/css/styles.css?v=df132369`) so visitors
+never get stuck on an old stylesheet. After editing `css/styles.css` or anything in `js/`,
+change the `?v=` value in every HTML page (any new value works; a short hash of the file is tidy).
