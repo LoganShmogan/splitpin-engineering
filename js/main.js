@@ -111,6 +111,7 @@
       moreBtn.textContent = "Show more (" + left + ")";
     }
     function applyFilter(key) {
+      if (key !== "all" && !cats[key]) key = "all";
       $$(".chip", filtersEl).forEach(function (c) {
         c.setAttribute("aria-pressed", String(c.dataset.filter === key));
       });
@@ -120,15 +121,14 @@
     }
     filtersEl.addEventListener("click", function (e) {
       var c = e.target.closest(".chip");
-      if (c) applyFilter(c.dataset.filter);
+      if (!c) return;
+      applyFilter(c.dataset.filter);
+      // Keep the filter in the URL so it can be shared or linked to (/work?cat=gates)
+      var url = c.dataset.filter === "all" ? location.pathname : location.pathname + "?cat=" + c.dataset.filter;
+      history.replaceState(null, "", url);
     });
     moreBtn.addEventListener("click", function () { shown += PAGE; render(); });
-    render();
-
-    // Service cards jump to the gallery pre-filtered
-    $$("[data-filter-link]").forEach(function (a) {
-      a.addEventListener("click", function () { applyFilter(a.dataset.filterLink); });
-    });
+    applyFilter(new URLSearchParams(location.search).get("cat") || "all");
 
     // Lightbox
     var lb = $("#lightbox");

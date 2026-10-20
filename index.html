@@ -10,18 +10,13 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Splitpin Engineering | Welding, Fabrication &amp; Repairs">
-  <meta property="og:description" content="Owner-operated welding and steel fabrication. Gates, handrails, trailers, stockyards and repairs.">
+  <meta property="og:description" content="Splitpin Engineering is an owner-operated welding and steel fabrication business. Gates, handrails, trailers, horse floats, stockyards, truck boxes and repairs. Built strong, built right.">
   <meta property="og:image" content="https://www.splitpinengineering.co.nz/images/og.jpg">
   <meta property="og:url" content="https://www.splitpinengineering.co.nz/">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,6 +30,10 @@
     "address": { "@type": "PostalAddress", "addressCountry": "NZ" }
   }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="has-call-bar">
   <!-- Icon sprite -->
@@ -68,17 +67,16 @@
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
-        <a href="#services">Services <span class="mono">01</span></a>
-        <a href="#about">About <span class="mono">02</span></a>
-        <a href="#work">Our Work <span class="mono">03</span></a>
-        <a href="#contact">Contact <span class="mono">04</span></a>
-        <a class="btn btn-primary" href="#contact">Get a Quote</a>
+        <a href="/services">Services <span class="mono">01</span></a>
+        <a href="/about">About <span class="mono">02</span></a>
+        <a href="/work">Our Work <span class="mono">03</span></a>
+        <a href="/contact">Contact <span class="mono">04</span></a>
+        <a class="btn btn-primary" href="/contact">Get a Quote</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- ================= HERO ================= -->
     <section class="hero">
       <div class="hero-media">
         <img src="/images/hero.webp" alt="Custom-built steel trailer chassis in the Splitpin Engineering workshop" width="2000" height="1500" fetchpriority="high">
@@ -88,8 +86,8 @@
         <h1>Built strong.<br><span class="accent">Built right.</span></h1>
         <p class="lead">Custom steel work from a one-man workshop: gates, handrails, trailers, horse floats, farm gear and repairs. You deal with the person doing the welding, from the first sketch to the final bead.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Get a free quote <svg><use href="#i-arrow"/></svg></a>
-          <a class="btn btn-ghost" href="#work">See the work</a>
+          <a class="btn btn-primary" href="/contact">Get a free quote <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="/work">See the work</a>
         </div>
         <dl class="spec-strip">
           <div><dt>Operator</dt><dd>Owner-run</dd></div>
@@ -101,8 +99,7 @@
     </section>
     <div class="hazard-stripe" aria-hidden="true"></div>
 
-    <!-- ================= SERVICES ================= -->
-    <section class="section grid-bg" id="services">
+    <section class="section grid-bg">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow">01 / Services</p>
@@ -110,162 +107,119 @@
           <p class="lead">If it's made of metal and needs cutting, bending or welding, it's probably something we can help with. A few of the regulars:</p>
         </div>
         <div class="services-grid">
-          <a class="service-card reveal" href="#work" data-filter-link="gates">
+          <a class="service-card reveal" href="/services#gates">
             <span class="ref">REF-01</span>
             <svg><use href="#s-gate"/></svg>
             <h3>Gates &amp; Fencing</h3>
             <p>Driveway and sliding gates, pedestrian gates, pool-style and security fencing, made to measure.</p>
-            <span class="more">View gates &rarr;</span>
+            <span class="more">Learn more &rarr;</span>
           </a>
-          <a class="service-card reveal" href="#work" data-filter-link="handrails">
+          <a class="service-card reveal" href="/services#handrails">
             <span class="ref">REF-02</span>
             <svg><use href="#s-rail"/></svg>
             <h3>Handrails &amp; Access</h3>
             <p>Galvanised and painted handrails for homes, steps, decks and schools. Safe, solid and tidy.</p>
-            <span class="more">View handrails &rarr;</span>
+            <span class="more">Learn more &rarr;</span>
           </a>
-          <a class="service-card reveal" href="#work" data-filter-link="trailers">
+          <a class="service-card reveal" href="/services#trailers">
             <span class="ref">REF-03</span>
             <svg><use href="#s-trailer"/></svg>
             <h3>Trailers &amp; Floats</h3>
             <p>New trailer builds, chassis repairs, axle and guard work, plus horse float refurbishment.</p>
-            <span class="more">View trailers &rarr;</span>
+            <span class="more">Learn more &rarr;</span>
           </a>
-          <a class="service-card reveal" href="#work" data-filter-link="vehicle">
+          <a class="service-card reveal" href="/services#vehicle">
             <span class="ref">REF-04</span>
             <svg><use href="#s-truck"/></svg>
             <h3>Truck &amp; Vehicle</h3>
             <p>Aluminium toolboxes, headboards, racks and roll cages built to fit your rig.</p>
-            <span class="more">View vehicle work &rarr;</span>
+            <span class="more">Learn more &rarr;</span>
           </a>
-          <a class="service-card reveal" href="#work" data-filter-link="farm">
+          <a class="service-card reveal" href="/services#farm">
             <span class="ref">REF-05</span>
             <svg><use href="#s-farm"/></svg>
             <h3>Farm &amp; Stockyards</h3>
             <p>Race gates, crush and drafting gear, feeders and stock equipment that stands up to the paddock.</p>
-            <span class="more">View farm work &rarr;</span>
+            <span class="more">Learn more &rarr;</span>
           </a>
-          <a class="service-card reveal" href="#work" data-filter-link="fabrication">
+          <a class="service-card reveal" href="/services#fabrication">
             <span class="ref">REF-06</span>
             <svg><use href="#s-weld"/></svg>
             <h3>Fabrication &amp; Repair</h3>
             <p>Buckets, attachments, canopies, sheet-metal work and one-off jobs. Broken? Bring it in.</p>
-            <span class="more">View fabrication &rarr;</span>
+            <span class="more">Learn more &rarr;</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
-    <section class="section section-alt" id="about">
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head section-head-row reveal">
+          <div>
+            <p class="eyebrow">02 / Recent work</p>
+            <h2>Straight from the workshop</h2>
+          </div>
+          <a class="btn btn-ghost" href="/work">View all work <svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="work-strip">
+          <a class="work-tile reveal" href="/work">
+            <img src="/images/work/thumb/4909.webp" alt="Driveway gate" loading="lazy" decoding="async">
+            <span class="tag">Driveway gate</span>
+          </a>
+          <a class="work-tile reveal" href="/work">
+            <img src="/images/work/thumb/4884.webp" alt="Trailer chassis" loading="lazy" decoding="async">
+            <span class="tag">Trailer chassis</span>
+          </a>
+          <a class="work-tile reveal" href="/work">
+            <img src="/images/work/thumb/4853.webp" alt="School handrail" loading="lazy" decoding="async">
+            <span class="tag">School handrail</span>
+          </a>
+          <a class="work-tile reveal" href="/work">
+            <img src="/images/work/thumb/4901.webp" alt="Stockyard gates" loading="lazy" decoding="async">
+            <span class="tag">Stockyard gates</span>
+          </a>
+          <a class="work-tile reveal" href="/work">
+            <img src="/images/work/thumb/4919.webp" alt="Horse float refurb" loading="lazy" decoding="async">
+            <span class="tag">Horse float refurb</span>
+          </a>
+          <a class="work-tile reveal" href="/work">
+            <img src="/images/work/thumb/4899.webp" alt="Bucket rebuild" loading="lazy" decoding="async">
+            <span class="tag">Bucket rebuild</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grid-bg">
       <div class="container feature">
         <div class="feature-media reveal">
           <img src="/images/work/full/4898.webp" alt="Rebuilding a worn excavator bucket on site" width="1800" height="1350" loading="lazy">
           <span class="dim">ON THE TOOLS</span>
         </div>
         <div class="reveal">
-          <p class="eyebrow">02 / About</p>
+          <p class="eyebrow">03 / About</p>
           <h2>One tradesman.<br>Start to finish.</h2>
-          <p class="lead">Splitpin Engineering is a sole-trader welding and fabrication business. No call centre, no subcontracting. The person who quotes your job is the person who builds it.</p>
-          <p>That means straight answers, honest pricing and work that's done properly the first time. Whether it's a single handrail or a full trailer build, every job gets the same attention to detail.</p>
-          <ul class="checklist">
-            <li><svg><use href="#i-check"/></svg><span><strong>Talk direct</strong> to the welder, not a middleman.</span></li>
-            <li><svg><use href="#i-check"/></svg><span><strong>Built to suit</strong>, measured and made for your site.</span></li>
-            <li><svg><use href="#i-check"/></svg><span><strong>Workshop or onsite</strong>, we come to you where it makes sense.</span></li>
-            <li><svg><use href="#i-check"/></svg><span><strong>Domestic, farm &amp; commercial</strong> jobs, big or small.</span></li>
-          </ul>
+          <p class="lead">No call centre, no subcontracting. The person who quotes your job is the person who builds it.</p>
+          <p>That means straight answers, honest pricing and work that's done properly the first time.</p>
+          <a class="btn btn-ghost" href="/about">More about us <svg><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </section>
 
-    <!-- ================= PROCESS ================= -->
-    <section class="section grid-bg" id="process">
+    <section class="section">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">How it works</p>
-          <h2>From idea to install</h2>
-        </div>
-        <ol class="process">
-          <li class="reveal"><h3>Get in touch</h3><p>Call, text or send the form with a few details and photos if you have them.</p></li>
-          <li class="reveal"><h3>Measure &amp; quote</h3><p>We'll talk it through, measure up and give you a clear, no-surprises quote.</p></li>
-          <li class="reveal"><h3>Fabricate</h3><p>Cut, fit and welded in the workshop, or onsite for repairs and installs.</p></li>
-          <li class="reveal"><h3>Deliver &amp; install</h3><p>Finished, fitted and checked. Job done properly, site left tidy.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ================= GALLERY ================= -->
-    <section class="section section-alt" id="work">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">03 / Our Work</p>
-          <h2>Recent jobs</h2>
-          <p class="lead">A selection of real work, straight from the workshop and the job site. Tap any photo to enlarge.</p>
-        </div>
-        <div class="filters" role="toolbar" aria-label="Filter gallery" id="filters"></div>
-        <div class="gallery" id="gallery"></div>
-        <div class="gallery-more-wrap"><button class="btn btn-ghost" id="gallery-more" type="button" hidden>Show more</button></div>
-        <noscript><p>Enable JavaScript to view the gallery.</p></noscript>
-      </div>
-    </section>
-
-    <!-- ================= CONTACT ================= -->
-    <section class="section grid-bg" id="contact">
-      <div class="container contact-grid">
-        <div class="reveal">
-          <p class="eyebrow">04 / Contact</p>
-          <h2>Let's get it built</h2>
-          <p class="lead">Tell us what you need and we'll get back to you with a quote. Photos and rough measurements help heaps.</p>
-          <div class="contact-cards">
-            <!-- TODO: replace placeholder phone / email / area with real details -->
-            <a class="contact-card" href="tel:+64210000000">
-              <svg><use href="#i-phone"/></svg>
-              <div><small>Call or text</small><strong>021 000 0000</strong></div>
-            </a>
-            <a class="contact-card" href="mailto:hello@splitpinengineering.co.nz">
-              <svg><use href="#i-mail"/></svg>
-              <div><small>Email</small><strong>hello@splitpinengineering.co.nz</strong></div>
-            </a>
-            <div class="contact-card">
-              <svg><use href="#i-map"/></svg>
-              <div><small>Service area</small><strong>Manawatū &amp; surrounds</strong></div>
-            </div>
-            <div class="contact-card">
-              <svg><use href="#i-clock"/></svg>
-              <div><small>Hours</small><strong>Mon&ndash;Fri, 7am&ndash;5pm</strong></div>
-            </div>
+        <div class="cta-band reveal">
+          <div>
+            <p class="eyebrow">Got a job in mind?</p>
+            <h2>Let's get it built</h2>
+            <p>Send through a few details and photos and we'll come back to you with a clear quote.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="/contact">Get a free quote <svg><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="tel:+64210000000"><svg><use href="#i-phone"/></svg> 021 000 0000</a>
           </div>
         </div>
-
-        <form class="form reveal" id="quote-form" novalidate>
-          <div class="ref"><span>QUOTE REQUEST</span><span>FORM SP-01</span></div>
-          <div class="field">
-            <label for="f-name">Name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="f-phone">Phone</label>
-            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
-          </div>
-          <div class="field field-wide">
-            <label for="f-type">Type of job</label>
-            <select id="f-type" name="type">
-              <option>Gates &amp; fencing</option>
-              <option>Handrails &amp; access</option>
-              <option>Trailers &amp; floats</option>
-              <option>Truck &amp; vehicle</option>
-              <option>Farm &amp; stockyards</option>
-              <option>Fabrication &amp; repair</option>
-              <option>Something else</option>
-            </select>
-          </div>
-          <div class="field field-wide">
-            <label for="f-msg">Job details</label>
-            <textarea id="f-msg" name="message" placeholder="What do you need built or fixed? Sizes, location, timeframe..." required></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit">Send enquiry <svg><use href="#i-arrow"/></svg></button>
-          <p class="form-note">This opens your email app with your details filled in. Attach photos before sending. See our <a href="/legal#privacy">privacy policy</a>.</p>
-        </form>
       </div>
     </section>
   </main>
@@ -283,9 +237,10 @@
         <div>
           <h4>Site</h4>
           <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#work">Our Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/work">Our Work</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
         <div>
@@ -300,6 +255,7 @@
           <ul>
             <li><a href="/legal#privacy">Privacy Policy</a></li>
             <li><a href="/legal#terms-of-trade">Terms of Trade</a></li>
+            <li><a href="/legal#cookies">Cookie Policy</a></li>
             <li><a href="/legal#website-terms">Website Terms</a></li>
           </ul>
         </div>
@@ -313,24 +269,9 @@
 
   <nav class="call-bar" aria-label="Quick contact">
     <a href="tel:+64210000000"><svg><use href="#i-phone"/></svg> Call</a>
-    <a href="#contact">Get a Quote</a>
+    <a href="/contact">Get a Quote</a>
   </nav>
 
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
-    <div class="lb-top">
-      <span id="lb-count">1 / 1</span>
-      <button class="lb-btn" id="lb-close" aria-label="Close"><svg><use href="#i-close"/></svg></button>
-    </div>
-    <div class="lb-stage" id="lb-stage">
-      <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo"><svg><use href="#i-left"/></svg></button>
-      <img id="lb-img" src="" alt="">
-      <button class="lb-btn lb-next" id="lb-next" aria-label="Next photo"><svg><use href="#i-right"/></svg></button>
-    </div>
-    <div class="lb-caption"><span id="lb-cat"></span><strong id="lb-title"></strong></div>
-  </div>
-
-  <script src="/js/gallery-data.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>

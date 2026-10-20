@@ -13,9 +13,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body class="has-call-bar">
+  <!-- Icon sprite -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3.6"/><path d="M10 9.2V21M14 9.2V16l4 5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></symbol>
+    <!-- service icons -->
+    <symbol id="s-gate" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M4 8v34M44 8v34M8 14h32v24H8zM8 38l32-24M16 14v24M24 14v24M32 14v24"/></symbol>
+    <symbol id="s-rail" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 42h10v-8h10v-8h10v-8h10"/><path d="M10 38V16a6 6 0 0 1 6-6h22v20"/></symbol>
+    <symbol id="s-trailer" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14h34v18H10zM10 26H2"/><circle cx="22" cy="36" r="4"/><circle cx="32" cy="36" r="4"/><path d="M18 14v18M28 14v18M36 14v18"/></symbol>
+    <symbol id="s-truck" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h22v22H4zM26 20h10l8 8v6H26"/><circle cx="12" cy="36" r="4"/><circle cx="36" cy="36" r="4"/><path d="M10 18h10v10H10z"/></symbol>
+    <symbol id="s-farm" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6v38M18 6v38M30 6v38M42 6v38M6 14h36M6 26h36M6 38h36"/></symbol>
+    <symbol id="s-weld" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 40l18-18M24 22l6-6 4 4-6 6zM34 20l8-8M30 10l2-4M38 18l4-2M36 14l6-6"/><path d="M4 44h40"/></symbol>
   </svg>
 
   <a class="skip-link" href="#main">Skip to content</a>
@@ -28,11 +45,11 @@
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
-        <a href="/#services">Services <span class="mono">01</span></a>
-        <a href="/#about">About <span class="mono">02</span></a>
-        <a href="/#work">Our Work <span class="mono">03</span></a>
-        <a href="/#contact">Contact <span class="mono">04</span></a>
-        <a class="btn btn-primary" href="/#contact">Get a Quote</a>
+        <a href="/services">Services <span class="mono">01</span></a>
+        <a href="/about">About <span class="mono">02</span></a>
+        <a href="/work">Our Work <span class="mono">03</span></a>
+        <a href="/contact">Contact <span class="mono">04</span></a>
+        <a class="btn btn-primary" href="/contact">Get a Quote</a>
       </nav>
     </div>
   </header>
@@ -40,9 +57,9 @@
   <main id="main">
     <section class="page-hero grid-bg">
       <div class="container">
-        <p class="eyebrow">Legal / Policies</p>
+        <p class="crumbs"><a href="/">Home</a> / Legal</p>
         <h1>The fine print</h1>
-        <p>Plain-English terms covering how we handle your information, how we quote and invoice, and how this website may be used. Last updated: 20 October 2026.</p>
+        <p class="lead">Plain-English terms covering how we handle your information, how we quote and invoice, cookies, and how this website may be used. Last updated: 20 October 2026.</p>
       </div>
     </section>
     <div class="hazard-stripe" aria-hidden="true"></div>
@@ -54,6 +71,7 @@
           <li><a href="#about-us">About us</a></li>
           <li><a href="#privacy">Privacy policy</a></li>
           <li><a href="#terms-of-trade">Terms of trade</a></li>
+          <li><a href="#cookies">Cookie policy</a></li>
           <li><a href="#website-terms">Website terms of use</a></li>
           <li><a href="#contact-us">Contact</a></li>
         </ol>
@@ -93,7 +111,7 @@
           <p>We take reasonable steps to keep your information safe and only keep it for as long as we need it for the purposes above or as required by law (for example, financial records are generally kept for seven years).</p>
 
           <h3>This website</h3>
-          <p>This website does not use advertising or tracking cookies, and we don't run analytics that identify you. The quote form doesn't store anything on our server. It opens your own email app so you can send the message to us directly. Our hosting provider may keep standard technical logs (such as IP address and browser type) for security and performance, and fonts are loaded from Google Fonts.</p>
+          <p>This website does not use advertising or tracking cookies, and we don't run analytics that identify you. The quote form doesn't store anything on our server. It opens your own email app so you can send the message to us directly. Our hosting provider may keep standard technical logs (such as IP address and browser type) for security and performance, and fonts are loaded from Google Fonts. See our <a href="#cookies">cookie policy</a> for more detail.</p>
 
           <h3>Photos of our work</h3>
           <p>We may photograph completed work for our portfolio. We won't publish photos that identify you, your address or your vehicle registration without your consent. If you'd like a photo of your job removed from this site, just let us know and we'll take it down.</p>
@@ -142,8 +160,29 @@
           <p>To the extent permitted by law, we're not liable for indirect or consequential loss (such as loss of profit or downtime), and our total liability for any claim is limited to the price paid for the work concerned.</p>
         </section>
 
+        <section id="cookies">
+          <h2>4. Cookie policy</h2>
+          <p>Cookies are small text files a website can save in your browser, often used to remember settings or track visitors across sites.</p>
+
+          <h3>Cookies we use</h3>
+          <p><strong>None.</strong> This website does not set any cookies. We don't use analytics, advertising, social media pixels or any other tracking tools, which is why you won't see a cookie banner here.</p>
+
+          <h3>Third-party services</h3>
+          <ul>
+            <li><strong>Google Fonts:</strong> the fonts on this site are loaded from Google's servers, so your browser sends Google a standard request that includes your IP address. Google states that the Fonts service does not set cookies. See <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's privacy policy</a>.</li>
+            <li><strong>Hosting:</strong> our hosting provider (Vercel) processes standard technical information, such as IP address and browser type, to deliver the site securely. It does not use this site to set advertising or tracking cookies.</li>
+            <li><strong>Phone and email links:</strong> tapping a phone number, email address or the quote form opens your own phone or email app. Anything you send is handled by that app and your email provider.</li>
+          </ul>
+
+          <h3>Managing cookies</h3>
+          <p>You can view, block or delete cookies at any time in your browser settings. Because this site doesn't rely on cookies, blocking them won't affect how it works.</p>
+
+          <h3>Changes</h3>
+          <p>If we ever add analytics or other tools that use cookies, we'll update this policy first and ask for your consent where required.</p>
+        </section>
+
         <section id="website-terms">
-          <h2>4. Website terms of use</h2>
+          <h2>5. Website terms of use</h2>
           <ul>
             <li>Information on this website is general in nature and is provided as a guide only. It isn't a quote or an offer to supply.</li>
             <li>All photos, text and graphics on this site belong to Splitpin Engineering unless stated otherwise. Please don't copy or reuse them without permission.</li>
@@ -155,7 +194,7 @@
         </section>
 
         <section id="contact-us">
-          <h2>5. Contact</h2>
+          <h2>6. Contact</h2>
           <!-- TODO: replace placeholder contact details -->
           <p>For questions about these terms or your personal information, contact:</p>
           <p><strong>Splitpin Engineering</strong><br>
@@ -168,12 +207,51 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-base" style="margin-top:0;border-top:0;padding-top:0">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/">
+            <span class="brand-mark"><svg><use href="#i-pin"/></svg></span>
+            <span class="brand-text"><strong>Splitpin</strong><span>Engineering</span></span>
+          </a>
+          <p style="color:var(--muted);margin-top:16px;max-width:36ch">Owner-operated welding, steel fabrication and repairs.</p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/work">Our Work</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+64210000000">021 000 0000</a></li>
+            <li><a href="mailto:hello@splitpinengineering.co.nz">Email us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/legal#privacy">Privacy Policy</a></li>
+            <li><a href="/legal#terms-of-trade">Terms of Trade</a></li>
+            <li><a href="/legal#cookies">Cookie Policy</a></li>
+            <li><a href="/legal#website-terms">Website Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
         <span>&copy; <span data-year>2026</span> Splitpin Engineering. All rights reserved.</span>
-        <span><a href="/">Back to home</a></span>
+        <span>Sole trader &middot; New Zealand</span>
       </div>
     </div>
   </footer>
+
+  <nav class="call-bar" aria-label="Quick contact">
+    <a href="tel:+64210000000"><svg><use href="#i-phone"/></svg> Call</a>
+    <a href="/contact">Get a Quote</a>
+  </nav>
 
   <script src="/js/main.js"></script>
 </body>

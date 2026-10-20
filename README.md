@@ -4,8 +4,12 @@ Static, mobile-first site for Splitpin Engineering (sole-trader welding & fabric
 No build step, no dependencies. Plain HTML, CSS and JS, ready for Vercel.
 
 ```
-index.html            Home: hero, services, about, process, gallery, contact
-legal.html            Privacy policy, terms of trade, website terms (served at /legal)
+index.html            Home: hero, services overview, recent work, about teaser
+services.html         Each service in detail + how it works      (/services)
+about.html            About the business                         (/about)
+work.html             Filterable photo gallery with lightbox     (/work, /work?cat=gates)
+contact.html          Contact details + quote form               (/contact)
+legal.html            Privacy, terms of trade, cookies, website terms (/legal)
 404.html              Not-found page
 css/styles.css        All styles (mobile-first)
 js/gallery-data.js    Gallery photo list (edit this to add/remove photos)
@@ -15,13 +19,15 @@ tools/                Helper to optimise new photos
 vercel.json           Clean URLs, caching and security headers
 ```
 
+The header and footer are repeated in each HTML page, so nav or footer changes need making in all six.
+
 ## Before going live: replace placeholders
 
 Search the project for `TODO` and `splitpinengineering.co.nz`:
 
-- **Phone** `021 000 0000` / `+64210000000`: index.html, legal.html
-- **Email** `hello@splitpinengineering.co.nz`: index.html, legal.html, js/main.js (`CONTACT_EMAIL`)
-- **Service area** (`Manawatū & surrounds`) and **hours**: index.html contact section
+- **Phone** `021 000 0000` / `+64210000000`: every page (header call bar, footer), contact.html, legal.html
+- **Email** `hello@splitpinengineering.co.nz`: every page footer, contact.html, legal.html, js/main.js (`CONTACT_EMAIL`)
+- **Service area** (`Manawatū & surrounds`) and **hours**: contact.html
 - **Domain** `https://www.splitpinengineering.co.nz`: canonical/OG tags, robots.txt, sitemap.xml
 - **NZBN**: legal.html
 - Have the legal page reviewed. It's a sensible NZ template, not legal advice.
