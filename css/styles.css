@@ -23,7 +23,6 @@
 
   --font-logo: "Russo One", "Arial Black", system-ui, sans-serif;
   --font-wide: "Michroma", "Eurostile", "Arial Black", sans-serif;
-  --font-script: "Kaushan Script", "Brush Script MT", cursive;
   --font-display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
   --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -178,8 +177,7 @@ p { margin: 0 0 1em; }
 .sign .dot-list { justify-content: center; margin: 2cqw 0 0; gap: 1cqw 3.5cqw; font-size: 4.6cqw; font-weight: 500; }
 .sign .dot-list li { gap: 1.6cqw; }
 .sign .dot-list li::before { width: 1.5cqw; height: 1.5cqw; }
-.sign-phone { display: inline-flex; align-items: flex-end; gap: 2.5cqw; text-decoration: none; font-family: var(--font-wide); font-size: 6.6cqw; letter-spacing: 0.04em; -webkit-text-stroke: 0.035em currentColor; }
-.call-me { font-family: var(--font-script); font-size: 3.6cqw; line-height: .9; color: var(--accent); transform: rotate(-8deg); }
+.sign-phone { font-family: var(--font-wide); font-size: 6.6cqw; letter-spacing: 0.04em; -webkit-text-stroke: 0.035em currentColor; }
 
 .phone-wide { font-family: var(--font-wide); font-size: 0.95em; letter-spacing: 0.04em; }
 
