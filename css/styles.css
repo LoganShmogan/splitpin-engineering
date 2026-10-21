@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Splitpin Engineering styles
+   Split Pin Engineering styles
    Mobile-first. Base rules target small screens; min-width queries scale up.
    ========================================================================== */
 
@@ -18,7 +18,12 @@
   --accent-hover: #ff8540;
   --hazard: #ffc21a;        /* hazard yellow */
   --ok: #4fd18b;
+  --sign-black: #141618;    /* sign board */
+  --sign-white: #f4f4f2;    /* sign lettering */
 
+  --font-logo: "Russo One", "Arial Black", system-ui, sans-serif;
+  --font-wide: "Michroma", "Eurostile", "Arial Black", sans-serif;
+  --font-script: "Kaushan Script", "Brush Script MT", cursive;
   --font-display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
   --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -133,15 +138,50 @@ p { margin: 0 0 1em; }
 }
 .site-header .container { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.brand-mark {
-  width: 38px; height: 38px; display: grid; place-items: center;
-  border: 2px solid var(--accent); border-radius: 50%; color: var(--accent);
+.brand { display: flex; align-items: center; text-decoration: none; }
+
+/* Logo lockup, recreated from the workshop sign:
+   slanted heavy "SPLIT PIN" over a white "ENGINEERING" plate */
+.logo { display: inline-flex; flex-direction: column; align-items: stretch; line-height: 1; color: var(--sign-white); }
+.logo-name {
+  font-family: var(--font-logo); font-size: 1.6rem; text-transform: uppercase; letter-spacing: 0.02em;
+  transform: skewX(-10deg); white-space: nowrap;
 }
-.brand-mark svg { width: 22px; height: 22px; transform: rotate(35deg); }
-.brand-text { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; line-height: 1; }
-.brand-text strong { display: block; font-size: 1.35rem; letter-spacing: 0.04em; }
-.brand-text span { display: block; font-family: var(--font-mono); font-weight: 400; font-size: 0.62rem; letter-spacing: 0.3em; color: var(--muted); margin-top: 3px; }
+.logo-plate {
+  margin-top: 4px; padding: 3px 6px 2px; border-radius: 3px;
+  background: var(--sign-white); color: var(--sign-black);
+  font-family: var(--font-wide); font-size: 0.5rem; letter-spacing: 0.16em; -webkit-text-stroke: 0.04em currentColor; text-transform: uppercase; text-align: center;
+}
+
+/* Service line from the sign: white words separated by orange dots */
+.dot-list { list-style: none; padding: 0; margin: 0 0 16px; display: flex; flex-wrap: wrap; gap: 4px 18px; font-family: var(--font-body); font-weight: 600; font-size: 1rem; color: var(--sign-white); }
+.dot-list li { display: inline-flex; align-items: center; gap: 8px; }
+.dot-list li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex: none; }
+
+/* Full replica of the workshop sign */
+.sign {
+  container-type: inline-size;
+  position: relative; display: grid; justify-items: center; gap: clamp(10px, 3vw, 18px);
+  padding: clamp(28px, 7vw, 44px) clamp(16px, 5vw, 32px) clamp(24px, 6vw, 36px); border-radius: 6px; text-align: center; color: var(--sign-white);
+  background:
+    radial-gradient(circle at 14px 14px, #8d969c 0 3px, transparent 3.5px),
+    radial-gradient(circle at calc(100% - 14px) 14px, #8d969c 0 3px, transparent 3.5px),
+    radial-gradient(circle at 14px calc(100% - 14px), #8d969c 0 3px, transparent 3.5px),
+    radial-gradient(circle at calc(100% - 14px) calc(100% - 14px), #8d969c 0 3px, transparent 3.5px),
+    linear-gradient(160deg, #23282c 0%, var(--sign-black) 45%, #0d0f10 100%);
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .45);
+}
+.sign .logo { width: 82%; }
+.sign .logo-name { font-size: 15cqw; }
+.sign .logo-plate { margin-top: 2.5cqw; padding: 1.4cqw 0 1cqw; border-radius: 1.4cqw; font-size: 5.4cqw; letter-spacing: 0.08em; }
+.sign .dot-list { justify-content: center; margin: 2cqw 0 0; gap: 1cqw 3.5cqw; font-size: 4.6cqw; font-weight: 500; }
+.sign .dot-list li { gap: 1.6cqw; }
+.sign .dot-list li::before { width: 1.5cqw; height: 1.5cqw; }
+.sign-phone { display: inline-flex; align-items: flex-end; gap: 2.5cqw; text-decoration: none; font-family: var(--font-wide); font-size: 6.6cqw; letter-spacing: 0.04em; -webkit-text-stroke: 0.035em currentColor; }
+.call-me { font-family: var(--font-script); font-size: 3.6cqw; line-height: .9; color: var(--accent); transform: rotate(-8deg); }
+
+.phone-wide { font-family: var(--font-wide); font-size: 0.95em; letter-spacing: 0.04em; }
 
 .nav-toggle {
   width: 48px; height: 48px; display: grid; place-items: center;

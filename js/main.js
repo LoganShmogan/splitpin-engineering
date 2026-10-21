@@ -1,8 +1,7 @@
 (function () {
   "use strict";
 
-  // TODO: set to the real enquiry inbox
-  var CONTACT_EMAIL = "hello@splitpinengineering.co.nz";
+  var CONTACT_EMAIL = "splitpin176v@gmail.com";
 
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };

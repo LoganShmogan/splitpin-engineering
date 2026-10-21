@@ -1,6 +1,6 @@
-# Splitpin Engineering website
+# Split Pin Engineering website
 
-Static, mobile-first site for Splitpin Engineering (sole-trader welding & fabrication).
+Static, mobile-first site for Split Pin Engineering (sole-trader welding & fabrication).
 No build step, no dependencies. Plain HTML, CSS and JS, ready for Vercel.
 
 ```
@@ -23,14 +23,19 @@ The header and footer are repeated in each HTML page, so nav or footer changes n
 
 ## Before going live: replace placeholders
 
-Search the project for `TODO` and `splitpinengineering.co.nz`:
+Phone (022 016 7223) and email (splitpin176v@gmail.com) are set. Still to confirm
+(search the project for `TODO` and `splitpinengineering.co.nz`):
 
-- **Phone** `021 000 0000` / `+64210000000`: every page (header call bar, footer), contact.html, legal.html
-- **Email** `hello@splitpinengineering.co.nz`: every page footer, contact.html, legal.html, js/main.js (`CONTACT_EMAIL`)
 - **Service area** (`Manawatū & surrounds`) and **hours**: contact.html
 - **Domain** `https://www.splitpinengineering.co.nz`: canonical/OG tags, robots.txt, sitemap.xml
 - **NZBN**: legal.html
 - Have the legal page reviewed. It's a sensible NZ template, not legal advice.
+
+## Branding
+
+The logo and the sign replica on the contact page are built in HTML/CSS from a photo of the
+workshop sign (no original artwork file). Fonts: Russo One (SPLIT PIN, skewed), Michroma
+(ENGINEERING plate and phone number), Kaushan Script ("Call Me"). Classes: `.logo`, `.sign`, `.dot-list`.
 
 ## Run locally
 
