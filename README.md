@@ -35,7 +35,7 @@ Phone (022 016 7223) and email (splitpin176v@gmail.com) are set. Still to confir
 
 The logo and the sign replica on the contact page are built in HTML/CSS from a photo of the
 workshop sign (no original artwork file). Fonts: Russo One (SPLIT PIN, skewed), Michroma
-(ENGINEERING plate and phone number), Kaushan Script ("Call Me"). Classes: `.logo`, `.sign`, `.dot-list`.
+(ENGINEERING plate and phone number). Classes: `.logo`, `.sign`, `.dot-list`.
 
 ## Run locally
 
