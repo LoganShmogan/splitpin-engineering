@@ -200,7 +200,7 @@ p { margin: 0 0 1em; }
   height: calc(100dvh - var(--header-h));
   background: var(--steel-950);
   padding: 24px var(--gutter);
-  display: flex; flex-direction: column; gap: 4px;
+  display: flex; flex-direction: column; gap: 4px; overflow-y: auto;
   opacity: 0; transform: translateY(-12px); visibility: hidden;
   transition: opacity .25s ease, transform .25s ease, visibility .25s;
 }
@@ -213,6 +213,7 @@ p { margin: 0 0 1em; }
 .site-nav a .mono { font-size: 0.75rem; color: var(--muted); font-weight: 400; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent); }
 .site-nav .btn { margin-top: 20px; font-size: 1.2rem; border-bottom: 0; justify-content: center; }
+.site-nav a.btn { align-items: center; padding: 0 24px; }
 .nav-open { overflow: hidden; }
 
 /* ---------- Hero ---------- */
@@ -521,14 +522,6 @@ body.has-call-bar { padding-bottom: 56px; }
 
 @media (min-width: 900px) {
   :root { --gutter: 32px; --header-h: 76px; }
-  .nav-toggle { display: none; }
-  .site-nav {
-    position: static; height: auto; opacity: 1; transform: none; visibility: visible;
-    background: none; padding: 0; flex-direction: row; align-items: center; gap: 28px;
-  }
-  .site-nav a { font-size: 1.1rem; border: 0; padding: 6px 0; letter-spacing: .06em; }
-  .site-nav a .mono { display: none; }
-  .site-nav .btn { margin: 0; min-height: 44px; font-size: 1rem; padding: 0 18px; }
   .hero { padding-bottom: 64px; }
   .hero::before { background: linear-gradient(90deg, rgba(11,14,16,.94) 0%, rgba(11,14,16,.75) 45%, rgba(11,14,16,.2) 100%), linear-gradient(180deg, transparent 70%, var(--steel-900) 100%); }
   .section { padding: 112px 0; }
@@ -564,3 +557,16 @@ body.has-call-bar { padding-bottom: 56px; }
   .legal-layout { grid-template-columns: 260px 1fr; gap: 56px; }
   .toc { position: sticky; top: calc(var(--header-h) + 24px); align-self: start; }
 }
+
+/* Full desktop nav (needs more room now it has six links) */
+@media (min-width: 1024px) {
+  .nav-toggle { display: none; }
+  .site-nav {
+    position: static; height: auto; opacity: 1; transform: none; visibility: visible;
+    background: none; padding: 0; flex-direction: row; align-items: center; gap: 24px; overflow: visible;
+  }
+  .site-nav a { font-size: 1.05rem; border: 0; padding: 6px 0; letter-spacing: .06em; }
+  .site-nav a .mono { display: none; }
+  .site-nav a.btn { min-height: 40px; margin: 0; padding: 0 16px; font-size: 0.95rem; letter-spacing: .06em; }
+}
+
