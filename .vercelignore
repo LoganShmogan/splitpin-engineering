@@ -1,0 +1,4 @@
+# Repo-only files: keep them off the live site
+docs/
+tools/
+README.md

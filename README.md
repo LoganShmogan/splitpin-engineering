@@ -1,7 +1,11 @@
 # Split Pin Engineering website
 
-Static, mobile-first site for Split Pin Engineering (sole-trader welding & fabrication).
-No build step, no dependencies. Plain HTML, CSS and JS, ready for Vercel.
+Static, mobile-first site for Split Pin Engineering, a welding & fabrication business run by
+Jason Wilson as a sole trader in Palmerston North. Designed and built by **Savepoint**.
+No build step, no dependencies. Plain HTML, CSS and JS, hosted on Vercel.
+
+Full documentation is in [`docs/`](docs/README.md): an owner guide for Jason, a developer
+guide, and notes on the legal page.
 
 ```
 index.html            Home: hero, services overview, recent work, about teaser
@@ -9,7 +13,7 @@ services.html         Each service in detail + how it works      (/services)
 about.html            About the business                         (/about)
 work.html             Filterable photo gallery with lightbox     (/work, /work?cat=gates)
 contact.html          Contact details + quote form               (/contact)
-legal.html            Privacy, terms of trade, cookies, website terms (/legal)
+legal.html            Privacy, terms of trade, warranty, cookies, website terms (/legal)
 404.html              Not-found page
 css/styles.css        All styles (mobile-first)
 js/gallery-data.js    Gallery photo list (edit this to add/remove photos)
@@ -17,6 +21,7 @@ js/main.js            Nav, gallery filters, lightbox, quote form
 images/work/          Optimised photos (full = lightbox, thumb = grid)
 tools/                Helper to optimise new photos
 vercel.json           Clean URLs, caching and security headers
+docs/                 Owner guide, developer guide, legal notes
 ```
 
 The header and footer are repeated in each HTML page, so nav or footer changes need making in all six.
@@ -29,7 +34,8 @@ Phone (022 016 7223) and email (splitpin176v@gmail.com) are set. Still to confir
 - **Domain**: the site currently uses `https://splitpin-engineering.vercel.app` as its
   address in canonical/OG tags, JSON-LD, robots.txt, sitemap.xml and llms.txt. If a custom
   domain is added, find-and-replace that URL everywhere.
-- Have the legal page reviewed. It's a sensible NZ template, not legal advice.
+- Have the legal page reviewed. It's a sensible NZ starting point, not legal advice.
+  See [docs/legal-notes.md](docs/legal-notes.md) for what to check.
 
 ## SEO
 
