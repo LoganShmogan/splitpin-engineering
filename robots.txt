@@ -1,4 +1,26 @@
+# Split Pin Engineering, Palmerston North
+# Everyone is welcome: search engines and AI assistants alike.
+
 User-agent: *
 Allow: /
 
-Sitemap: https://www.splitpinengineering.co.nz/sitemap.xml
+# AI search and assistant crawlers (listed explicitly so they know they're allowed)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: DuckAssistBot
+User-agent: Amazonbot
+User-agent: meta-externalagent
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://splitpin-engineering.vercel.app/sitemap.xml

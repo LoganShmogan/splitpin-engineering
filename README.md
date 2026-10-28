@@ -23,13 +23,22 @@ The header and footer are repeated in each HTML page, so nav or footer changes n
 
 ## Before going live: replace placeholders
 
-Phone (022 016 7223) and email (splitpin176v@gmail.com) are set. Still to confirm
-(search the project for `TODO` and `splitpinengineering.co.nz`):
+Phone (022 016 7223) and email (splitpin176v@gmail.com) are set. Still to confirm:
 
-- **Service area** (`Manawatū & surrounds`) and **hours**: contact.html
-- **Domain** `https://www.splitpinengineering.co.nz`: canonical/OG tags, robots.txt, sitemap.xml
-- **NZBN**: legal.html
+- **Hours**: contact.html
+- **Domain**: the site currently uses `https://splitpin-engineering.vercel.app` as its
+  address in canonical/OG tags, JSON-LD, robots.txt, sitemap.xml and llms.txt. If a custom
+  domain is added, find-and-replace that URL everywhere.
 - Have the legal page reviewed. It's a sensible NZ template, not legal advice.
+
+## SEO
+
+- Every page has a location-focused title and description (Palmerston North / Manawatū),
+  a canonical URL, Open Graph tags and `HomeAndConstructionBusiness` JSON-LD (plus breadcrumbs
+  on inner pages). Keep these in step if contact details or services change.
+- `robots.txt` allows all crawlers and names the main AI search bots explicitly.
+- `llms.txt` is a plain-text summary of the business for AI assistants.
+- Update `<lastmod>` in `sitemap.xml` when pages change.
 
 ## Branding
 

@@ -1,0 +1,27 @@
+# Split Pin Engineering
+
+> Owner-operated welding, steel fabrication, maintenance and repairs business based in Palmerston North, New Zealand, serving the wider Manawatū. Heavy and light engineering, one-off jobs to full builds. The person who quotes the job is the person who builds it.
+
+- Location: Palmerston North, Manawatū-Whanganui, New Zealand (workshop and on-site work)
+- Service area: Palmerston North and the wider Manawatū
+- Phone: 022 016 7223 (+64 22 016 7223), call or text
+- Email: splitpin176v@gmail.com
+- Business type: sole trader
+
+## Services
+
+- [Gates & fencing](https://splitpin-engineering.vercel.app/services#gates): driveway, sliding and pedestrian gates, pool-style and security fencing, made to measure
+- [Handrails & access](https://splitpin-engineering.vercel.app/services#handrails): galvanised and painted handrails for homes, steps, decks and schools
+- [Trailers & horse floats](https://splitpin-engineering.vercel.app/services#trailers): new trailer builds, chassis repairs, axle and guard work, horse float refurbishment
+- [Truck & vehicle](https://splitpin-engineering.vercel.app/services#vehicle): aluminium toolboxes, headboards, racks and roll cages
+- [Farm & stockyards](https://splitpin-engineering.vercel.app/services#farm): race gates, crush and drafting gear, feeders and stock equipment
+- [Fabrication & repair](https://splitpin-engineering.vercel.app/services#fabrication): buckets, attachments, canopies, sheet metal and one-off jobs
+
+## Pages
+
+- [Home](https://splitpin-engineering.vercel.app/)
+- [Services](https://splitpin-engineering.vercel.app/services)
+- [Our work (photo gallery)](https://splitpin-engineering.vercel.app/work)
+- [About](https://splitpin-engineering.vercel.app/about)
+- [Contact and quotes](https://splitpin-engineering.vercel.app/contact)
+- [Legal](https://splitpin-engineering.vercel.app/legal)
