@@ -4,7 +4,7 @@ Background on `legal.html`: what each section does, the New Zealand laws it reli
 needs a professional review, and when it has to change.
 
 > These notes and the legal page are a well-researched starting point, not legal advice.
-> Savepoint isn't a law firm. A lawyer should review the terms of trade and warranty before
+> Save Point isn't a law firm. A lawyer should review the terms of trade and warranty before
 > Split Pin Engineering relies on them in a dispute.
 
 Last updated: 28 October 2026 (matches the date shown on the legal page).
@@ -114,7 +114,7 @@ accurate as of this date:
 ### 6. Website terms of use
 
 Standard terms: information is general only, copyright in content and designs, links,
-acceptable use and New Zealand governing law. It also credits Savepoint as the designer and
+acceptable use and New Zealand governing law. It also credits Save Point as the designer and
 builder of the site.
 
 ### 7. Changes

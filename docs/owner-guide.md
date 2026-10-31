@@ -2,7 +2,7 @@
 
 For Jason Wilson, owner of Split Pin Engineering. This explains how your website works, what you
 need to keep an eye on, and how to get things changed. You don't need to touch any code:
-Savepoint looks after that.
+Save Point looks after that.
 
 ## Your website
 
@@ -28,18 +28,18 @@ The website itself doesn't store any messages. If something is sent, it's in you
 
 **Worth knowing:** because the form uses the customer's own email app, someone could fill
 it in and then not press send in their email app. If you'd like form enquiries to arrive
-no matter what, Savepoint can connect the form to a form service. Ask if you want this.
+no matter what, Save Point can connect the form to a form service. Ask if you want this.
 
 ### Tips
 
 - Check your Gmail spam folder now and then, especially for the first few weeks.
 - Reply quickly. People asking for quotes often contact two or three businesses.
-- If you change your phone number or email, tell Savepoint straight away. They appear on
+- If you change your phone number or email, tell Save Point straight away. They appear on
   every page and in the information Google reads about your business.
 
 ## Keeping the site up to date
 
-Send Savepoint a text or email when any of these change:
+Send Save Point a text or email when any of these change:
 
 - your phone number, email, hours or the area you cover;
 - the services you offer, or one you want to push harder;
@@ -53,13 +53,13 @@ Send Savepoint a text or email when any of these change:
 Good photos are the most useful thing you can add. To send new ones:
 
 1. Take the photo in good light, with the whole job in frame. Landscape works best.
-2. Avoid number plates, house numbers and people's faces, or tell Savepoint so they can be
+2. Avoid number plates, house numbers and people's faces, or tell Save Point so they can be
    cropped out.
 3. Send the original photo (not a screenshot) with a short note: what it is and which
    category it fits (Gates & Fencing, Handrails, Trailers & Floats, Truck & Vehicle,
    Farm & Stockyards, Fabrication & Repair).
 
-Savepoint will shrink the photo for the web, remove the hidden location data that phones
+Save Point will shrink the photo for the web, remove the hidden location data that phones
 save in photos, and add it to the gallery.
 
 ## The Legal page and what it means for you
@@ -88,7 +88,7 @@ written in plain English, and customers can see it at any time. Because it's pub
 If a job is residential building work (for example, structural handrails, balustrades or
 gates and fencing that form part of a house build) and costs **$30,000 or more including
 GST**, the Building Act requires a **written contract** and a **disclosure statement and
-checklist** before work starts. Talk to Savepoint or a lawyer if you take on a job this size
+checklist** before work starts. Talk to Save Point or a lawyer if you take on a job this size
 and need templates.
 
 ### Warranty
@@ -105,7 +105,7 @@ lack of maintenance, other people's repairs, customer-supplied parts, and so on)
 - Keep invoices and business records for **seven years** (a tax requirement), then delete
   or shred them.
 - If someone asks for a copy of the information you hold about them, or asks you to
-  correct it, you have to respond within **20 working days**. Ask Savepoint if you're not
+  correct it, you have to respond within **20 working days**. Ask Save Point if you're not
   sure what to send.
 - If customer information is lost or stolen in a way that could seriously harm someone
   (for example, a phone with customer details is stolen and wasn't locked), you may have
@@ -114,11 +114,11 @@ lack of maintenance, other people's repairs, customer-supplied parts, and so on)
 ### Photos of jobs
 
 Before photographing a job for the website, ask the customer if they mind. If anyone asks
-for a photo to be taken down, tell Savepoint and it'll be removed.
+for a photo to be taken down, tell Save Point and it'll be removed.
 
 ## Getting help
 
-Contact Savepoint for anything to do with the website, its content, or this guide.
+Contact Save Point for anything to do with the website, its content, or this guide.
 
 The Legal page is a solid starting point, but it isn't legal advice. Have a lawyer or your
 accountant look over it, particularly the terms of trade, before relying on it in a dispute.

@@ -3,7 +3,7 @@
 Website for **Split Pin Engineering**, a welding, steel fabrication, maintenance and repair
 business run by Jason Wilson as a sole trader in Palmerston North, New Zealand.
 
-Designed, built and maintained by **Savepoint**.
+Designed, built and maintained by **Save Point Limited**. Not open source: site code © Save Point Limited, content and branding © Split Pin Engineering. See [LICENSE](../LICENSE).
 
 | | |
 |---|---|
@@ -17,9 +17,9 @@ Designed, built and maintained by **Savepoint**.
 
 | Guide | For | What's in it |
 |---|---|---|
-| [Owner guide](owner-guide.md) | Jason | What the site does, how enquiries reach you, what to send Savepoint when something needs changing, and your responsibilities under the legal page |
-| [Developer guide](developer-guide.md) | Savepoint | Project structure, editing pages, styles, the gallery, adding photos, SEO, deployment, domains and a pre-release checklist |
-| [Legal notes](legal-notes.md) | Savepoint and Jason | What each part of the legal page covers, the laws it relies on, what needs checking by a lawyer, and when it must be updated |
+| [Owner guide](owner-guide.md) | Jason | What the site does, how enquiries reach you, what to send Save Point when something needs changing, and your responsibilities under the legal page |
+| [Developer guide](developer-guide.md) | Save Point | Project structure, editing pages, styles, the gallery, adding photos, SEO, deployment, domains and a pre-release checklist |
+| [Legal notes](legal-notes.md) | Save Point and Jason | What each part of the legal page covers, the laws it relies on, what needs checking by a lawyer, and when it must be updated |
 
 The top-level [README](../README.md) is the short version for anyone opening the repo.
 

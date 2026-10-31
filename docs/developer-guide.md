@@ -1,6 +1,6 @@
 # Developer guide
 
-For Savepoint, maintaining the Split Pin Engineering site.
+For Save Point, maintaining the Split Pin Engineering site.
 
 ## Stack
 
