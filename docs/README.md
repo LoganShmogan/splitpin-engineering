@@ -7,7 +7,7 @@ Designed, built and maintained by **Save Point Limited**. Not open source: site 
 
 | | |
 |---|---|
-| Live site | https://splitpin-engineering.vercel.app |
+| Live site | https://www.splitpin-engineering.co.nz |
 | Repository | https://github.com/LoganShmogan/splitpin-engineering |
 | Hosting | Vercel (deploys automatically from `main`) |
 | Business phone | 022 016 7223 |

@@ -23,4 +23,4 @@ User-agent: meta-externalagent
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://splitpin-engineering.vercel.app/sitemap.xml
+Sitemap: https://www.splitpin-engineering.co.nz/sitemap.xml

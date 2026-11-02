@@ -10,18 +10,18 @@
 
 ## Services
 
-- [Gates & fencing](https://splitpin-engineering.vercel.app/services#gates): driveway, sliding and pedestrian gates, pool-style and security fencing, made to measure
-- [Handrails & access](https://splitpin-engineering.vercel.app/services#handrails): galvanised and painted handrails for homes, steps, decks and schools
-- [Trailers & horse floats](https://splitpin-engineering.vercel.app/services#trailers): new trailer builds, chassis repairs, axle and guard work, horse float refurbishment
-- [Truck & vehicle](https://splitpin-engineering.vercel.app/services#vehicle): aluminium toolboxes, headboards, racks and roll cages
-- [Farm & stockyards](https://splitpin-engineering.vercel.app/services#farm): race gates, crush and drafting gear, feeders and stock equipment
-- [Fabrication & repair](https://splitpin-engineering.vercel.app/services#fabrication): buckets, attachments, canopies, sheet metal and one-off jobs
+- [Gates & fencing](https://www.splitpin-engineering.co.nz/services#gates): driveway, sliding and pedestrian gates, pool-style and security fencing, made to measure
+- [Handrails & access](https://www.splitpin-engineering.co.nz/services#handrails): galvanised and painted handrails for homes, steps, decks and schools
+- [Trailers & horse floats](https://www.splitpin-engineering.co.nz/services#trailers): new trailer builds, chassis repairs, axle and guard work, horse float refurbishment
+- [Truck & vehicle](https://www.splitpin-engineering.co.nz/services#vehicle): aluminium toolboxes, headboards, racks and roll cages
+- [Farm & stockyards](https://www.splitpin-engineering.co.nz/services#farm): race gates, crush and drafting gear, feeders and stock equipment
+- [Fabrication & repair](https://www.splitpin-engineering.co.nz/services#fabrication): buckets, attachments, canopies, sheet metal and one-off jobs
 
 ## Pages
 
-- [Home](https://splitpin-engineering.vercel.app/)
-- [Services](https://splitpin-engineering.vercel.app/services)
-- [Our work (photo gallery)](https://splitpin-engineering.vercel.app/work)
-- [About](https://splitpin-engineering.vercel.app/about)
-- [Contact and quotes](https://splitpin-engineering.vercel.app/contact)
-- [Legal](https://splitpin-engineering.vercel.app/legal)
+- [Home](https://www.splitpin-engineering.co.nz/)
+- [Services](https://www.splitpin-engineering.co.nz/services)
+- [Our work (photo gallery)](https://www.splitpin-engineering.co.nz/work)
+- [About](https://www.splitpin-engineering.co.nz/about)
+- [Contact and quotes](https://www.splitpin-engineering.co.nz/contact)
+- [Legal](https://www.splitpin-engineering.co.nz/legal)

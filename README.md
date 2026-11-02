@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://splitpin-engineering.vercel.app"><img src="images/og.jpg" alt="Split Pin Engineering" width="480"></a>
+  <a href="https://www.splitpin-engineering.co.nz"><img src="images/og.jpg" alt="Split Pin Engineering" width="480"></a>
 </p>
 
 <h1 align="center">Split Pin Engineering Website</h1>
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://splitpin-engineering.vercel.app">Live site</a> ·
+  <a href="https://www.splitpin-engineering.co.nz">Live site</a> ·
   <a href="docs/README.md">Docs</a> ·
   <a href="docs/owner-guide.md">Owner Guide</a> ·
   <a href="docs/developer-guide.md">Developer Guide</a> ·
@@ -64,9 +64,6 @@ The header and footer are repeated in each HTML page, so nav or footer changes n
 Phone (022 016 7223) and email (splitpin176v@gmail.com) are set. Still to confirm:
 
 - **Hours**: contact.html
-- **Domain**: the site currently uses `https://splitpin-engineering.vercel.app` as its
-  address in canonical/OG tags, JSON-LD, robots.txt, sitemap.xml and llms.txt. If a custom
-  domain is added, find-and-replace that URL everywhere.
 - Have the legal page reviewed. It's a sensible NZ starting point, not legal advice.
   See [docs/legal-notes.md](docs/legal-notes.md) for what to check.
 

@@ -199,21 +199,16 @@ From the CLI, if needed: `npx vercel` (preview) and `npx vercel --prod`.
 
 ### Custom domain
 
-The site currently uses `https://splitpin-engineering.vercel.app` everywhere a full URL is
-needed. If a custom domain is added:
+The canonical address is `https://www.splitpin-engineering.co.nz`. It's used everywhere a
+full URL is needed: canonical and Open Graph tags, JSON-LD, `robots.txt`, `sitemap.xml`,
+`llms.txt` and the docs.
 
-1. Add it in Vercel under **Settings → Domains** and set the DNS records Vercel shows.
-2. Make it the primary domain so the `vercel.app` address redirects to it.
-3. Find and replace the old URL throughout the project:
+`vercel.json` 301-redirects `splitpin-engineering.vercel.app` and the bare
+`splitpin-engineering.co.nz` to the `www` address, so search engines only ever index one
+copy. Vercel preview URLs are left alone.
 
-   ```sh
-   grep -rl 'splitpin-engineering.vercel.app' --exclude-dir=.git . \
-     | xargs sed -i 's#https://splitpin-engineering.vercel.app#https://www.example.co.nz#g'
-   ```
-
-   This covers canonical and Open Graph tags, JSON-LD, `robots.txt`, `sitemap.xml`,
-   `llms.txt` and the docs.
-4. Add the new domain as a property in Search Console and resubmit the sitemap.
+When adding a page, add it to `sitemap.xml` and `llms.txt`, and bump `<lastmod>` in the
+sitemap when a page's content changes.
 
 ## Pre-release checklist
 

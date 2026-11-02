@@ -99,7 +99,7 @@ Points to note:
   Trading Act sections (s 5D: ss 9, 12A, 13 and 14(1)). Both sections require the
   agreement to be **in writing** and **fair and reasonable**. A website page alone may not
   be enough: quotes and invoices to business customers should refer to these terms (for
-  example, "Our terms of trade at splitpin-engineering.vercel.app/legal apply").
+  example, "Our terms of trade at www.splitpin-engineering.co.nz/legal apply").
 
 ### 5. Cookie policy
 
@@ -134,8 +134,8 @@ Have a lawyer review:
 
 Practical steps for Jason:
 
-- [ ] Put "Terms of trade: splitpin-engineering.vercel.app/legal" on every quote and
-      invoice (update the address if a custom domain is added).
+- [ ] Put "Terms of trade: www.splitpin-engineering.co.nz/legal" on every quote and
+      invoice (the address above is the live domain).
 - [ ] Turn on two-step verification for the Gmail account.
 - [ ] Keep job records for seven years.
 

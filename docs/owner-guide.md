@@ -6,7 +6,7 @@ Save Point looks after that.
 
 ## Your website
 
-Address: **https://splitpin-engineering.vercel.app**
+Address: **https://www.splitpin-engineering.co.nz**
 
 It has six pages: Home, Services, About, Our Work (your photo gallery), Contact and Legal.
 It's built to load fast on phones, because that's how most people will find you, and it
