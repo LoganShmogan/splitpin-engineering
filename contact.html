@@ -247,9 +247,13 @@
 
         <form class="form reveal" id="quote-form" novalidate>
           <div class="ref"><span>QUOTE REQUEST</span><span>FORM SP-01</span></div>
-          <div class="field">
+          <div class="field field-wide">
             <label for="f-name">Name</label>
             <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
             <label for="f-phone">Phone</label>
@@ -271,8 +275,10 @@
             <label for="f-msg">Job details</label>
             <textarea id="f-msg" name="message" placeholder="What do you need built or fixed? Sizes, location, timeframe..." required></textarea>
           </div>
+          <input name="company" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
           <button class="btn btn-primary" type="submit">Send enquiry <svg><use href="#i-arrow"/></svg></button>
-          <p class="form-note">This opens your email app with your details filled in. Attach photos before sending. See our <a href="/legal#privacy">privacy policy</a>.</p>
+          <p class="form-note" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Got photos? Email them to <a href="mailto:splitpin176v@gmail.com">splitpin176v@gmail.com</a> or text 022 016 7223. See our <a href="/legal#privacy">privacy policy</a>.</p>
         </form>
       </div>
     </section>
@@ -327,6 +333,6 @@
     <a href="/contact">Get a Quote</a>
   </nav>
 
-  <script src="/js/main.js?v=8734adf6"></script>
+  <script src="/js/main.js?v=2b289baf"></script>
 </body>
 </html>

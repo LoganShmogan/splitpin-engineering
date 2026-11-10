@@ -206,25 +206,47 @@
     });
   }
 
-  // ---------- Quote form (opens the visitor's email app) ----------
+  // ---------- Quote form (sent with EmailJS, falls back to the visitor's email app) ----------
   var form = $("#quote-form");
   if (form) {
+    var status = $("#form-status");
+    var btn = $("button[type=submit]", form);
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       // form.elements avoids clashing with HTMLFormElement's own .name property
       var f = form.elements;
-      var name = f.namedItem("name").value.trim();
-      var msg = f.namedItem("message").value.trim();
-      var type = f.namedItem("type").value;
-      if (!name) { f.namedItem("name").reportValidity(); return; }
-      if (!msg) { f.namedItem("message").reportValidity(); return; }
-      var body =
-        "Name: " + name + "\n" +
-        "Phone: " + (f.namedItem("phone").value.trim() || "-") + "\n" +
-        "Job type: " + type + "\n\n" + msg + "\n";
-      window.location.href = "mailto:" + CONTACT_EMAIL +
-        "?subject=" + encodeURIComponent("Quote request: " + type + " (" + name + ")") +
-        "&body=" + encodeURIComponent(body);
+      if (f.namedItem("company").value) return; // honeypot: only bots fill it in
+      for (var i = 0; i < form.elements.length; i++) {
+        if (!form.elements[i].checkValidity()) { form.elements[i].reportValidity(); return; }
+      }
+      var v = function (n) { return f.namedItem(n).value.trim(); };
+      var params = {
+        name: v("name"), email: v("email"), phone: v("phone") || "-",
+        title: f.namedItem("type").value, message: v("message")
+      };
+      btn.disabled = true;
+      status.textContent = "Sending...";
+      fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          service_id: "service_bcbn7wb",
+          template_id: "template_g3g9pyl",
+          user_id: "8dfC64p83LE3uYra-",
+          template_params: params
+        })
+      }).then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        form.reset();
+        status.textContent = "Thanks, your enquiry has been sent. We'll be in touch soon.";
+      }).catch(function () {
+        status.textContent = "That didn't send, so we've opened your email app instead.";
+        var body = "Name: " + params.name + "\nEmail: " + params.email + "\nPhone: " + params.phone +
+          "\nJob type: " + params.title + "\n\n" + params.message + "\n";
+        window.location.href = "mailto:" + CONTACT_EMAIL +
+          "?subject=" + encodeURIComponent("Quote request: " + params.title + " (" + params.name + ")") +
+          "&body=" + encodeURIComponent(body);
+      }).then(function () { btn.disabled = false; });
     });
   }
 })();

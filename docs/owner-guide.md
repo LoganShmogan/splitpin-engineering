@@ -20,15 +20,11 @@ There are three ways, and all of them come straight to you:
 1. **Phone or text** to 022 016 7223. Tapping the number on a phone dials it.
 2. **Email** to splitpin176v@gmail.com. Tapping the address opens their email app.
 3. **The quote form** on the Contact page. When someone fills it in and presses send, it
-   opens *their* email app with a message already written to you, which they then send.
-   The email arrives in your Gmail with a subject like
-   `Quote request: Gates & fencing (Sam Smith)`.
+   arrives in your Gmail straight away. Reply to the email to answer them. If the form
+   ever fails to send, it opens the customer's own email app instead.
 
 The website itself doesn't store any messages. If something is sent, it's in your Gmail.
-
-**Worth knowing:** because the form uses the customer's own email app, someone could fill
-it in and then not press send in their email app. If you'd like form enquiries to arrive
-no matter what, Save Point can connect the form to a form service. Ask if you want this.
+The form can't carry photos, so it asks people to email or text them to you.
 
 ### Tips
 

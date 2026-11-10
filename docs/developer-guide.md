@@ -143,19 +143,20 @@ the privacy policy).
 
 ## Quote form
 
-The form on `contact.html` doesn't post anywhere. `js/main.js` builds a `mailto:` link to
-`CONTACT_EMAIL` with the name, phone, job type and message, and the visitor's email app
-sends it.
+The form on `contact.html` is sent with the [EmailJS](https://www.emailjs.com) REST API
+(no SDK). The service ID, template ID and public key are in the submit handler in
+`js/main.js`. The public key is meant to be public.
 
-To receive submissions directly instead:
+The template receives `name`, `email`, `phone`, `title` (job type) and `message`. Set the
+template's Reply-To to `{{email}}` so replies go to the customer.
 
-1. Sign up for a form service (Formspree, Web3Forms or similar) using Jason's email.
-2. Replace the submit handler in `js/main.js` with a `fetch` POST to the service, and show a
-   success or error message on the page.
-3. Add a spam check (most services offer a honeypot field or captcha).
-4. **Update the legal page.** The privacy policy and cookie policy both say the form
-   doesn't send or store anything through the website. Name the form service as a
-   provider that stores enquiries, and say where it stores them.
+- A hidden `company` field is a honeypot: if it has a value the form silently does nothing.
+- If the EmailJS request fails, the handler falls back to a `mailto:` link to
+  `CONTACT_EMAIL`, so the enquiry isn't lost.
+- In the EmailJS dashboard, restrict the account to the site's domain (Account > Security)
+  so the key can't be used from elsewhere.
+- If you swap EmailJS for another service, update the legal page (Where it's stored, and
+  Third-party services in the cookie policy).
 
 ## SEO
 

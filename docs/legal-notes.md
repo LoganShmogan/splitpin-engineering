@@ -108,8 +108,8 @@ collected through a website, and overseas visitors expect a cookie policy. The p
 accurate as of this date:
 
 - the site sets **no cookies** and uses no `localStorage` or `sessionStorage`;
-- the only third-party requests are Google Fonts (no cookies) and Vercel hosting;
-- the quote form is a `mailto:` link, so nothing is submitted to the website.
+- the only third-party requests are Google Fonts (no cookies), Vercel hosting and EmailJS
+  (quote form submissions only, no cookies).
 
 ### 6. Website terms of use
 
@@ -146,7 +146,7 @@ Update `legal.html`, its "Last updated" date and this file when any of these hap
 | Change | Sections affected |
 |---|---|
 | Analytics, a chat widget, embedded maps or video, or any other third-party script | 2 (Privacy: website), 5 (Cookies), possibly a consent banner |
-| The quote form starts sending to a form service | 2 (Where it's stored), 5 (Third-party services) |
+| The quote form moves away from EmailJS | 2 (Where it's stored), 5 (Third-party services) |
 | Moving away from Gmail or Vercel | 2 (Where it's stored), 5 (Hosting) |
 | GST registration | 1 (About us); quotes and invoices |
 | Business becomes a company or changes name | 1, 8, the footer and JSON-LD on every page |
